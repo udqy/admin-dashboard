@@ -11,6 +11,7 @@ body {
     height: 100vh;
     padding: 20px;
     position: relative;
+    
 }
 
 .profile {
@@ -38,8 +39,10 @@ body {
 }
 
 .second-div {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    height: 100vh;
+    overflow: scroll;
 }
 
 .topbar {
@@ -48,7 +51,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    position: relative;
+    position: sticky;
     background-image: linear-gradient(to bottom, #82e2ff, #f7c53b00);
 }
 
@@ -106,18 +109,17 @@ body {
 .announcements {
     display: flex;
     flex-direction: column;
-    gap: 20px;
 
     width: auto;
-    height: 50%;
+    height: auto;
 }
 
 .announcement-content {
-
     background-color: #AEC9F0;
-}
-
-.trending {
+    border-radius: 10px;
+    padding: 20px;
+    height: 45vh;
+    overflow: scroll;
 }
 
 .projects {
@@ -126,14 +128,28 @@ body {
     gap: 20px;
 }
 
+hr {
+    color: rgba(0, 0, 0, 0.473);
+}
+
 .card {
     padding: 20px;
     background-color: #A3D3E2;
     border-radius: 10px;
+    height: 2fr;
 }
+
 
 .card-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
+
+.after-logo::after {
+    content: url(./assets/star.svg);
+}
+
+.card:hover {
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.342); 
+  }

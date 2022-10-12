@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uday</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <div class="sidebar">
@@ -106,14 +109,14 @@
                     Search
                 </div>
             </div>
-            <div class="bottom-topbar">
-                <div class="topleft">
+            <div class="flex-align-center bottom-topbar">
+                <div class="flex-align-center topleft">
                     <img src="./assets/peep.svg" alt="Profile" class="profile">
                     <div>
                         <p class="small-text">Hey,</p><p class="large-text"> Uday (@udayjdv)</p> 
                     </div>
                 </div>
-                <div class="topright">
+                <div class="flex-align-center topright">
                     <div class="new-project">
                         New Project
                     </div>
@@ -124,10 +127,8 @@
             </div>
         </div>
         <div class="content">
-            <div class="projects">
-                <div class="title">
-                    Your Projects
-                </div>
+            <div class="flex-col">
+                <p class="title">Your Projects</p> 
                 <div class="card-container">
                     <div class="card">
                         <p class="large-text">Project Title</p> 
@@ -172,9 +173,9 @@
                 </div>
             </div>
             <div class="right-sidebar">
-                <div class="announcements">
-                    <p>Announcements</p>
-                    <div class="announcement-content">
+                <div class="flex-col">
+                    <p class="title">Announcements</p>
+                    <div class="content-block">
                         <p>Announcement 1</p>
                         <p class="small-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati facilis vel molestiae voluptate animi nobis sunt.</p>
                         <hr>
@@ -189,8 +190,8 @@
                     </div>  
                 </div>
                 <div class="trending">
-                    <p>Trending</p>
-                    <div class="announcement-content">
+                    <p class="title">Trending</p>
+                    <div class="content-block">
                         <p>Trending 1</p>
                         <p class="small-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati facilis vel molestiae voluptate animi nobis sunt.</p>
                         <hr>

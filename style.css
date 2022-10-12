@@ -4,18 +4,17 @@ body {
     display: grid;
     grid-template-columns: 20% 80%;
     box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .sidebar {
-    background-color: #8c92ff;
+    background-color: #8c92ffd0;
     height: 100vh;
     padding: 20px;
     position: relative;
-    
 }
 
 .profile {
-    width: auto;
     height: 64px;
     border-radius: 100%;
 }
@@ -77,9 +76,12 @@ body {
     justify-content: space-between;
 }
 
-.topright, .topleft {
+.flex-align-center {
     display: flex;
     align-items: center;
+}
+
+.topright, .topleft {
     justify-content: center;
     gap: 30px;
     line-height: 2px;
@@ -99,33 +101,23 @@ body {
     font-size: 1.2rem;
 }
 
+.title {
+    font-size: 1.2rem;
+}
+
 .content {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 30px;  
+    padding: 5px 30px;  
     gap: 30px;
 }
 
-.announcements {
-    display: flex;
-    flex-direction: column;
-
-    width: auto;
-    height: auto;
-}
-
-.announcement-content {
+.content-block {
     background-color: #AEC9F0;
     border-radius: 10px;
-    padding: 20px;
-    height: 45vh;
+    padding: 8px 20px;
+    height: 50vh;
     overflow: scroll;
-}
-
-.projects {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 hr {
@@ -139,6 +131,10 @@ hr {
     height: 2fr;
 }
 
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
 
 .card-container {
     display: grid;
@@ -151,5 +147,5 @@ hr {
 }
 
 .card:hover {
-    box-shadow: 0 0 11px rgba(0, 0, 0, 0.342); 
+    box-shadow: 0 0 11px rgba(205, 199, 255, 0.479); 
   }
